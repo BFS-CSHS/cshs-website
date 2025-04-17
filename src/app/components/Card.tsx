@@ -43,7 +43,7 @@ export default function Card({
         <h1 className="text-3xl font-bold">
           {title}
         </h1>
-        <p className="text-lg self-center">
+        <p className="text-lg self-center text-gray-700">
           {children}
         </p>
       </div>

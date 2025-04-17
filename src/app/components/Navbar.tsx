@@ -17,16 +17,13 @@ export default function Navbar() {
             </picture>
           </Link>
           <div className="space-x-6">
-            <Link href="/" className="text-xl hover:text-gray-300">
-              Home
-            </Link>
             <a href="#learn-more" className="text-xl hover:text-gray-300">
               About
             </a>
             <a href="#members" className="text-xl hover:text-gray-300">
               Members
             </a>
-            <a href="#" className="text-xl hover:text-gray-300">
+            <a href="#events" className="text-xl hover:text-gray-300">
               Events
             </a>
           </div>
