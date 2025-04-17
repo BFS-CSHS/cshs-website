@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center">
         <div className="flex space-x-6 mb-4">
           <Link
-            href="https://github.com"
+            href="https://github.com/BFS-CSHS"
             target="_blank"
             rel="noopener noreferrer"
           >
