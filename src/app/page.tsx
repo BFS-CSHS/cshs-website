@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import Member from "./components/Member";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { FaComputer } from "react-icons/fa6";
 import { HiOutlineAcademicCap } from "react-icons/hi";
@@ -46,10 +48,10 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="md:grid md:grid-cols-12 md:text-left text-center mb-32"
+          className="md:grid md:grid-cols-12 md:text-left text-center mb-12"
           data-aos="fade-right"
         >
-          <h1 className="md:col-span-4 text-7xl text-white self-center font-bold mb-5">
+          <h1 className="md:col-span-4 text-7xl text-white self-center font-bold md:mb-0 mb-5">
             Our Goals
           </h1>
           <div className="md:col-span-8 grid grid-rows-3 gap-4 md:px-0 px-8">
@@ -80,6 +82,110 @@ export default function Home() {
               students, hackathons, or open-source contributions—to share
               computing knowledge and give back.
             </Card>
+          </div>
+        </div>
+      </div>
+
+      {/* Club photos */}
+      <div className="container mx-auto">
+        <div className="grid grid-cols-4 gap-6 mb-12" data-aos="fade-down">
+          <div className="relative h-48 w-full shadow-xl">
+            <Image
+              className="object-cover rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110"
+              src="/ClubPhotos/1.jpg"
+              alt="cshs"
+              fill
+            />
+          </div>
+          <div className="relative h-48 w-full shadow-xl">
+            <Image
+              className="object-cover rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110"
+              src="/ClubPhotos/2.jpg"
+              alt="cshs"
+              fill
+            />
+          </div>
+          <div className="relative h-48 w-full shadow-xl">
+            <Image
+              className="object-cover rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110"
+              src="/ClubPhotos/3.jpg"
+              alt="cshs"
+              fill
+            />
+          </div>
+          <div className="relative h-48 w-full shadow-xl">
+            <Image
+              className="object-cover rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110"
+              src="/ClubPhotos/4.jpg"
+              alt="cshs"
+              fill
+            />
+          </div>
+        </div>
+      </div>
+
+       {/* Club members */}
+      <div id="members" className="container mx-auto">
+        <h1
+          className="text-7xl text-white font-bold text-center"
+          data-aos="fade-right"
+        >
+          Our Club Members
+        </h1>
+
+        <div
+          className="flex justify-center mt-5 gap-x-5 mb-12"
+          data-aos="fade-right"
+        >
+          <Button color="red">2024-2025</Button>
+          <Button color="green">2023-2024</Button>
+        </div>
+
+        <div className="grid grid-col-3 gap-y-8 mb-32" data-aos="fade-up">
+          <div className="flex justify-center gap-x-5">
+            <Member
+              name="Artem Kim"
+              position="President"
+              photoPath="ajsdfjas"
+              pronouns="he/him"
+            />
+
+            <Member
+              name="Tanvi Kumar"
+              position="Vice-president"
+              photoPath="ajsdfjas"
+              pronouns="she/her"
+            />
+          </div>
+          <div className="flex justify-center gap-x-5">
+            <Member
+              name="Aiden Yoon"
+              position="Treasurer"
+              photoPath="ajsdfjas"
+              pronouns="he/him"
+            />
+
+            <Member
+              name="Vivian Choi"
+              position="Webmaster"
+              photoPath="ajsdfjas"
+              pronouns="she/her"
+            />
+
+            <Member
+              name="Dana Kim"
+              position="Secretary"
+              photoPath="ajsdfjas"
+              pronouns="she/her"
+            />
+          </div>
+          <div className="flex justify-center gap-x-5">
+            <Member
+              name="Roenne Arjona"
+              position="Member"
+              photoPath="ajsdfjas"
+              pronouns="she/her"
+            />
           </div>
         </div>
       </div>

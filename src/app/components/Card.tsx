@@ -34,7 +34,7 @@ export default function Card({
 }: CardProps) {
   const classes = `${colorClasses[color]} p-5 mr-5 rounded-2xl flex-shrink-0 w-20 h-20 flex items-center justify-center self-center`;
   return (
-    <div className="p-5 bg-white rounded-2xl flex w-full">
+    <div className="p-5 bg-white rounded-2xl flex w-full transition-transform duration-300 ease-in-out hover:scale-105">
       <div className={classes}>
         <Icon className="text-4xl text-white" />
       </div>
