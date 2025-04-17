@@ -217,7 +217,7 @@ export default function Home() {
       </div>
 
       {/* Events */}
-      <div className="container mx-auto mb-32" id="events" data-aos="fade-right">
+      <div className="container mx-auto mb-16" id="events" data-aos="fade-right">
         <h1 className="text-7xl text-white font-bold text-center mb-8">
           <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-transparent bg-clip-text">
             Get involved
