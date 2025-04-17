@@ -26,7 +26,7 @@ export default function Navbar() {
               Members
             </a>
             <a href="#" className="text-xl hover:text-gray-300">
-              Projects
+              Events
             </a>
           </div>
         </div>
