@@ -13,6 +13,7 @@ export default function Member({
   pronouns,
   photoPath,
 }: MemberProps) {
+  console.log(photoPath);
   return (
     <div className="p-5 pr-16 bg-white rounded-2xl flex w-96">
       <div className="relative h-20 w-20 mr-5">
