@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <nav className="absolute w-full z-100 bg-transparent px-8 py-4 text-white">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <a href="/">
+          <Link href="/">
             <picture>
               <source
                 media="(max-width: 768px)"
@@ -14,11 +15,11 @@ export default function Navbar() {
               />
               <Image src="/logo.png" alt="cshs" width={250} height={80} />
             </picture>
-          </a>
+          </Link>
           <div className="space-x-6">
-            <a href="/" className="text-xl hover:text-gray-300">
+            <Link href="/" className="text-xl hover:text-gray-300">
               Home
-            </a>
+            </Link>
             <a href="#learn-more" className="text-xl hover:text-gray-300">
               About
             </a>
