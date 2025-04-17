@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-md text-gray-500">
-          © {new Date().getFullYear()} BFS Computer Science Honor Society. All rights reserved.
+          © {new Date().getFullYear()} BFS CSHS. All rights reserved.
         </p>
       </div>
     </footer>
