@@ -1,5 +1,4 @@
 import { IconType } from "react-icons";
-import { RiUserCommunityFill } from "react-icons/ri";
 
 interface CardProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color:
@@ -32,7 +31,6 @@ export default function Card({
   title,
   icon: Icon,
   children,
-  ...rest
 }: CardProps) {
   const classes = `${colorClasses[color]} p-5 mr-5 rounded-2xl flex-shrink-0 w-20 h-20 flex items-center justify-center self-center`;
   return (
